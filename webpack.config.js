@@ -1,4 +1,5 @@
 const path = require('path');
+console.log(path.join(__dirname,'src'))
 module.exports = {
     entry: './src/app.tsx',
     output: {
@@ -16,5 +17,9 @@ module.exports = {
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
+        modules: [
+            path.join(__dirname,'src'),
+            path.join(__dirname,'node_modules'),
+        ],
     },
 };

@@ -1,8 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import Index from './components/pages/index';
+
 ReactDOM.render(
-    <div>
-        <h1>Hello, Welcome to React and TypeScript</h1>
-    </div>,
+    <Index />,
     document.getElementById("app")
 );
